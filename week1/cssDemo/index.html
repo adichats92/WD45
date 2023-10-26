@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <h2 class="logo">CSS Demo</h2>
+        <div class="burger-menu">menu</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non consequuntur modi? Vel
+        pariatur, dicta inventore doloremque natus ea reiciendis!
+      </p>
+    </main>
+    <div class="up">go up</div>
+    <footer></footer>
+    <script>
+      const burgerMenu = document.querySelector('.burger-menu');
+      const upButton = document.querySelector('.up');
+      const navLinks = document.querySelector('.nav-links');
+      burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('show-dropdown');
+      });
+      upButton.addEventListener('click', () => {
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+  </body>
+</html>
