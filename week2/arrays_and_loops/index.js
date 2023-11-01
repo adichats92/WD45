@@ -78,7 +78,8 @@ function sumRec(num) {
   if (num === 1) {
     return 1;
   }
-  // return the same 
+  // return the same
   return num + sumRec(num - 1);
 }
 console.log(sumRec(5)); // 5 + 4 + 3 + 2 + 1 = 15
+
